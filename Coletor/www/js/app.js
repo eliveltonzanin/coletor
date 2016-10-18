@@ -8,7 +8,7 @@
 angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives','app.services',])
 
 .config(function($ionicConfigProvider){
-  
+
 })
 
 .run(function($ionicPlatform) {
@@ -24,4 +24,9 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
       StatusBar.styleDefault();
     }
   });
+})
+.constant("Api", {
+    "url": "http://192.168.10.47:99",
+    // "url": "http://192.168.10.47:99/WS_LOGIN.apw?WSDL",
+    //"port": "99"
 })

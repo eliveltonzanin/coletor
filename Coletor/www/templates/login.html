@@ -9,15 +9,15 @@
             <ion-list id="login-list1">
                 <label class="item item-input item-stacked-label" id="login-input1">
                     <span class="input-label">Usuário:</span>
-                    <input type="text" placeholder="">
+                    <input type="text" placeholder="" ng-model="usuario.username">
                 </label>
                 <label class="item item-input item-stacked-label" id="login-input2">
                     <span class="input-label">Senha:</span>
-                    <input type="password" placeholder="">
+                    <input type="password" placeholder="" ng-model="usuario.password">
                 </label>
             </ion-list>
             <div class="spacer" style="width: 300px; height: 23px;"></div>
-            <a ui-sref="menu" id="login-button1" style="color:#FFFFFF;border-radius:10px 10px 10px 10px;" class="button button-positive  button-block">Entrar</a>
+            <a ui-sref="menu" id="login-button1" ng-click="login()"  style="color:#FFFFFF;border-radius:10px 10px 10px 10px;" class="button button-positive  button-block">Entrar</a>
         </form>
         <div>
             <img src="img/Ec7nxGOoQIWbiOYwOaO8_1390248783_totvs.jpg" width="30%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
